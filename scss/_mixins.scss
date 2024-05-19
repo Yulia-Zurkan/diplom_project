@@ -1,0 +1,35 @@
+@mixin link ($hover: red , $active:green) {
+  &:hover {
+    color: $hover;
+  }
+  &:active {
+    color: $active;
+  }
+}
+
+@mixin link_bg ($hover: red ) {
+  color : white ;
+  background-color: green;
+  &:hover {
+    background-color: blue;
+  }
+  cursor: pointer;
+}
+
+@mixin main_page_link{
+  @include link;
+  color: black;
+  text-decoration: none;
+}
+
+@mixin main_bg{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

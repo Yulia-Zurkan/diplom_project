@@ -1,0 +1,68 @@
+@import 'fonts';
+@import 'variables' ;
+@import 'mixins' ;
+@import 'reset' ;
+
+html , body{
+  height: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+h2{
+  @media (max-width:767px) {
+    font-size: 16px;
+  }
+}
+.img_bg{
+  @include main_bg;
+}
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.exit_container {
+  display: flex;
+  margin: 0 auto;
+}
+.exit_form{
+  max-width: 600px;
+  background-color: $primary_6;
+  padding: 50px;
+  margin-top: 150px;
+  @media (max-width:767px) {
+    max-width: 300px;
+    padding: 30px;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  input {
+    padding: 5px;
+  }
+
+  @media (max-width:767px) {
+    font-size: 15px;
+  }
+}
+.btn_exit{
+  @include link_bg;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+}
+.sign_up{
+  color: black;
+  text-decoration: underline;
+  margin-left: 80px;
+  @include link ;
+  
+
+  @media (max-width:767px) {
+    margin-left: 25px;
+  }
+}
+.home_btn{
+  @include main_page_link;
+}

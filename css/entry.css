@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+body ul, body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 16px;
+  }
+}
+
+.img_bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.exit_container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.exit_form {
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px;
+  margin-top: 150px;
+}
+@media (max-width: 767px) {
+  .exit_form {
+    max-width: 300px;
+    padding: 30px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input {
+  padding: 5px;
+}
+@media (max-width: 767px) {
+  form {
+    font-size: 15px;
+  }
+}
+
+.btn_exit {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+}
+.btn_exit:hover {
+  background-color: blue;
+}
+
+.sign_up {
+  color: black;
+  text-decoration: underline;
+  margin-left: 80px;
+}
+.sign_up:hover {
+  color: red;
+}
+.sign_up:active {
+  color: green;
+}
+@media (max-width: 767px) {
+  .sign_up {
+    margin-left: 25px;
+  }
+}
+
+.home_btn {
+  color: black;
+  text-decoration: none;
+}
+.home_btn:hover {
+  color: red;
+}
+.home_btn:active {
+  color: green;
+}/*# sourceMappingURL=entry.css.map */

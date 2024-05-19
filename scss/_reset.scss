@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+  @media (max-width:767px) {
+    &.lock{
+      overflow: hidden;
+    }
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+}
